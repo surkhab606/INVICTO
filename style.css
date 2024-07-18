@@ -1,9 +1,10 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: sans-serif;
-
+    box-sizing: border-box;
 }
+
+
 
 .banner {
     width: 100%;
@@ -39,24 +40,16 @@
     text-decoration: none;
     color: #fff;
     text-transform: uppercase;
+    transition: color 0.3s ease; 
 }
 
-.navbar ul li::after {
-    content: '';
-    height: 3px;
-    width: 0; 
-    background: #ffffff;
-    position: absolute;
-    left: 0;
-    bottom: -10px;
-    transition: 0.5s;
-}
-
-.navbar ul li:hover::after {
-    width: 100%
+.navbar ul li a:hover {
+    color:#9d9205;
 }
 
 .homepage {
+    
+    font-family: 'Poppins', 'Arial', san-serif;
     width: 100%; 
     position: absolute;
     top: 50%; 
@@ -76,15 +69,123 @@
     line-height: 25px;
 }
 
+.home2text {
+    text-align: center;
+}
+
+.home2text h2 {
+    font-size:55px;
+    margin-top:80px;
+}
+
+.home2text p {
+    margin: 20px auto;
+    font-weight: 100;
+    line-height: 25px;
+}
+
 button {
+    font-family: 'Poppins', 'Arial', sans-serif;
     width: 200px; 
     padding: 15px 0; 
     text-align: center; 
     margin: 20px 10px; 
     border-radius: 25px;
     font-weight: bold;
-    border: 2px solid #009688;
+    border: 2px solid #ffffff;
     background: transparent;
     color: white;
     cursor: pointer;
+    position: relative;
+    overflow: hidden;
 }
+
+span {
+    background: #9d9205; 
+    height: 100%;
+    width: 0;
+    border-radius: 25px;
+    position: absolute; 
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s
+}
+
+button:hover span{
+    width: 100%;
+}
+button:hover {
+    border: none;
+}
+
+.home2img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+
+}
+
+.container {
+    max-width: 2200px;
+    width: 95%;
+}
+
+
+.slider-wrapper .image-list {
+    display: grid;
+    gap: 18px;
+    font-size: 0;
+    margin-bottom: 30px;
+    overflow-x: auto;
+    scrollbar-width: none;
+    grid-template-columns: repeat(6, 1fr);
+}
+
+.slider-wrapper .image-list::-webkit-scrollbar {
+    display: none;
+}
+
+.slider-wrapper .image-list .image-item {
+    width: 725px;
+    height: 700px;
+    object-fit: cover;
+}
+
+.container .slider-scrollbar {
+    height: 24px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+
+.slider-scrollbar .scrollbar-track {
+    height: 2px;
+    width: 100%;
+    background: #ccc;
+    position: relative;
+    border-radius: 4px;
+}
+
+.slider-scrollbar .scrollbar-thumb {
+    position: absolute;
+    height: 100%;
+    width: 50%;
+    background: black;
+    border-radius: inherit;
+    cursor: grab;
+}
+
+
+.slider-scrollbar .scrollbar-thumb::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: -10px;
+    bottom: -10px;
+}
+
+
