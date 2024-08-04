@@ -466,6 +466,10 @@ input {
     align-items: center;
 }
 
+.social-contact-link {
+    text-decoration: none;
+    color: inherit;
+}
 .social-action {
     display: flex;
     align-items: center;
