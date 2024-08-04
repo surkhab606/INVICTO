@@ -74,6 +74,7 @@ html {
 
 .home2text {
     text-align: center;
+    margin-bottom: 0;
 }
 
 .home2text h2 {
@@ -85,6 +86,81 @@ html {
     margin: 20px auto;
     font-weight: 100;
     line-height: 25px;
+    margin-bottom: 0;
+}
+
+.home2imgtext {
+    text-align: center;
+}
+
+.home2imgtext h2 {
+    font-size: 55px;
+    margin-top: 10px;
+}
+
+.projects { 
+    color: black;
+}
+
+.project-container {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    gap: 2.5rem;
+}
+
+.project-box{
+    background-color: var(--main-color);
+    height: 300px;
+    border-radius: 3rem;
+    border: 5px solid black;
+    cursor: pointer;
+    transition: 0.4s ease-in-out;
+    margin: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+    padding: 1rem;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.project-box:hover{
+    background: #9d9205;
+    color: black;
+    transform:scale(1.05)
+    
+
+}
+
+.project-box .project-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center; 
+    padding: 1rem; 
+}
+
+.project-info h4{
+    font-size: 2rem;
+    font-weight: 800;
+    line-height: 2;
+}
+
+.project-info h4 i.material-icons {
+    font-size: 2.5rem;
+    position: relative;
+    top: 0.35rem;
+}
+
+.project-info p{
+    font-size: 1.1rem;
+    font-weight: 600;
+    max-height: 100px;
+    line-height: 1.7;
+    margin: auto;
 }
 
 .homebuttons button {
@@ -130,6 +206,7 @@ html {
     align-items: center;
     justify-content: center;
     min-height: 100vh;
+    
 
 }
 
