@@ -171,20 +171,20 @@
 
 
         <section class = "contactus" id ="contactus">
-            <form class = "contact-container">
+            <form class = "contact-container" action = "https://formspree.io/f/xeoqzjzq" method = "POST">
                 <h1>Contact Us</h1>
                 <div class ="input-name">
-                    <input type="text" class = "first-name" name = "fName" placeholder="First Name">
-                    <input type="text" class = "last-name" name = "lName" placeholder="Last Name">
+                    <input type="text" class = "first-name" name = "fName" placeholder="First Name" required>
+                    <input type="text" class = "last-name" name = "lName" placeholder="Last Name" required>
                 </div>
                 <div class="input-email">
-                    <input type="email" class = "email" name ="email" placeholder="Your Email">
+                    <input type="email" class = "email" name ="email" placeholder="Your Email" required>
                 </div>
                 <div class="input-subject">
                     <input type="text" class = "subject" name ="subject" placeholder="Subject">
                 </div>
                 <div class="input-message">
-                    <input type="text" class = "message" name ="message" placeholder="Your Message">
+                    <input type="text" class = "message" name ="message" placeholder="Your Message" required></textarea>
                 </div>
                 <div class ="action-btn">
                     <button class ="btn btn-submit">Submit</button>
