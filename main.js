@@ -61,4 +61,31 @@ const initSlider = () => {
 window.addEventListener("load", initSlider);
 //IMAGE GALLERY SLIDER
 
+document.addEventListener("DOMContentLoaded", function() {
+    var modal = document.getElementById("lightbox-modal");
+    var modalImg = document.getElementById("lightbox-img");
+    var captionText = document.getElementById("lightbox-caption");
+    var images = document.querySelectorAll(".image-item");
+    var closeBtn = document.getElementById("lightbox-close");
+
+    images.forEach(function(img) {
+        img.addEventListener("click", function() {
+            modal.style.display = "block";
+            modalImg.src = this.src;
+            captionText.innerHTML = this.alt;
+        });
+    });
+
+    closeBtn.onclick = function() {
+        modal.style.display = "none";
+    };
+
+    // Close modal when clicking outside the image
+    modal.addEventListener("click", function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    });
+});
+
 

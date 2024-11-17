@@ -1,207 +1,185 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>Invicto Homes</title>
-        <link rel ="stylesheet" href = "style.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-        <link rel = "icon" href="favicon.png" type="image/png">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-        <link rel="stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
-        <meta name = "viewport" content = "width=device-width, initial-scale = 1.0">
-
-        <script src = "main.js" defer></script>
-    <style> 
-            body {
-                font-family: 'Poppins', 'Arial', sans-serif;
-            }
-        </style>
-    </head>
-    <body> 
-        
-        <div class = "banner">
-            <div class = "navbar">
-                <img src = "chevy.png" class = "logo">
-                <ul>
-                    <li><a href = "#projects">Services</a></li>
-                    <li><a href = "#home2">Projects</a></li>
-                    <li><a href = "#aboutus">About Invicto</a></li>
-                    <li><a href = "#contactus">Contact Us</a></li>
-                </ul>
-            </div>
+<head>
+    <title>Invicto Homes</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Fonts and Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;700;900&family=Material+Icons&display=swap" rel="stylesheet">
+    <link rel="icon" href="favicon.png" type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- JavaScript -->
+    <script src="main.js" defer></script>
+</head>
+<body> 
+    <div class="banner">
+        <div class="navbar">
+            <img src="chevy.png" class="logo" alt="Invicto Homes Logo">
+            <!-- Hamburger menu for mobile -->
+            <input type="checkbox" id="nav-toggle" class="nav-toggle">
+            <label for="nav-toggle" class="nav-toggle-label">
+                <span></span>
+            </label>
+            <ul>
+                <li><a href="#projects">Services</a></li>
+                <li><a href="#home2">Projects</a></li>
+                <li><a href="#aboutus">About Invicto</a></li>
+                <li><a href="#contactus">Contact Us</a></li>
+            </ul>
         </div>
 
-            <section class ="home1" id = "home1">
-            <div class = "homepage">
-                <h1> DESIGN YOUR DREAMS WITH INVICTO HOMES</h1>
-                <p1>Based in Calgary, Invicto Homes specializes in modern 
-                    renovations and new house constructions. We create 
-                    stunning, contemporary spaces that blend style and 
-                    functionality. <br> Transform your home or build a 
-                    new one with our innovative, high-quality approach. 
-                    Discover the future of home building with 
-                    Invicto Homes – where modern design meets 
-                    exceptional craftsmanship.</p1>
-                    <div class = "homebuttons"> 
-                        
-                        <button type ="button" onclick="location.href ='#contactus'"><span></span>CONTACT US</button>
-                        <button type ="button" onclick="location.href='#home2'"><span></span>DISCOVER MORE</button>
-                    
-                    </div>
+        <section class="home1" id="home1">
+            <div class="homepage">
+                <h1>DESIGN YOUR DREAMS WITH INVICTO HOMES</h1>
+                <p>Based in Calgary, Invicto Homes specializes in modern renovations and new house constructions. We create stunning, contemporary spaces that blend style and functionality.<br> Transform your home or build a new one with our innovative, high-quality approach. Discover the future of home building with Invicto Homes – where modern design meets exceptional craftsmanship.</p>
+                <div class="homebuttons"> 
+                    <button type="button" onclick="location.href ='#contactus'"><span></span>CONTACT US</button>
+                    <button type="button" onclick="location.href='#home2'"><span></span>DISCOVER MORE</button>
+                </div>
             </div>
         </section>
-
         
-        <section class ="home2" id ="home2">
-            
-            <div class = "home2text">
+    </div>
+
+    <section class="home2" id="home2">
+        <div class="home2text">
             <h2>EXPLORE OUR PORTFOLIO</h2>
-            <p><b>At Invicto Homes, we pride ourselves on delivering 
-                superior craftsmanship and innovative designs tailored 
-                to your unique vision. From modern new builds to transformative 
-                renovations, our gallery showcases the quality and attention to 
-                detail that define every project we undertake.</b></p>
+            <p><b>At Invicto Homes, we pride ourselves on delivering superior craftsmanship and innovative designs tailored to your unique vision. From modern new builds to transformative renovations, our gallery showcases the quality and attention to detail that define every project we undertake.</b></p>
+        </div>
+    </section>
+
+    <section class="home2img">
+        <div class="container">
+            <div class="slider-wrapper">
+                <button id="prev-slide" class="slide-button material-icons">chevron_left</button>
+                <div class="image-list">
+                    <img src="house1.png" alt="House 1" class="image-item">
+                    <img src="house2.png" alt="House 2" class="image-item">
+                    <img src="house3.png" alt="House 3" class="image-item">
+                    <img src="house4.png" alt="House 4" class="image-item">
+                    <img src="house5.png" alt="House 5" class="image-item">
+                    <img src="house6.png" alt="House 6" class="image-item">
+                </div>
+                <button id="next-slide" class="slide-button material-icons">chevron_right</button>
             </div>
-        </section>
-
-        <section class = "home2img">
-            
-                <div class ="container">
-                    <div class = "slider-wrapper">
-                        <button id ="prev-slide" class ="slide-button material-symbols-outlined">chevron_left</button>
-                        <div class = "image-list">
-                            <img src = "house1.png" alt = "img-1" class = "image-item">
-                            <img src = "house2.png" alt = "img-2" class = "image-item">
-                            <img src = "house3.png" alt = "img-3" class = "image-item">
-                            <img src = "house4.png" alt = "img-4" class = "image-item">
-                            <img src = "house5.png" alt = "img-5" class = "image-item">
-                            <img src = "house6.png" alt = "img-6" class = "image-item">
-                        </div>
-                        <button id ="next-slide" class ="slide-button material-symbols-outlined">chevron_right</button>
-                    </div>
-                    <div class = "slider-scrollbar">
-                        <div class="scrollbar-track">
-                            <div class="scrollbar-thumb"></div>
-                        </div>
-                    </div>
-                </div>
-        </section>
-
-        <section class = "home2imgtext">
-            <div class = "home2imgtext">
-                <h2>WHAT WE OFFER</h2>
-            </div>
-            </section>
-
-            <section class = "projects" id = "projects">
-            <div class = "project-container">
-                <div class = "project-box">
-                    <div class = "project-info">
-                        <h4>CUSTOM RENOVATIONS <i class = "material-icons">foundation</i></h4>
-                        <p>Transform your existing space with our custom 
-                            renovation services. From kitchens to bathrooms, 
-                            we bring your vision to life with exceptional 
-                            craftsmanship and attention to detail.
-                        </p>
-                    </div>
-                </div>
-
-                <div class = "project-box">
-                    <div class = "project-info">
-                        <h4>NEW HOME CONSTRUCTIONS <i class = "material-icons">construction</i></h4>
-                        <p>Build your dream home from the ground up with Invicto Homes. 
-                            Our team of experts ensures every detail is crafted to 
-                            perfection, creating a home that reflects your style and 
-                            meets your needs.</p>
-                    </div>
-                </div>
-
-                <div class = "project-box">
-                    <div class = "project-info">
-                        <h4>EXTERIOR DESIGN <i class = "material-icons">roofing</i></h4>
-                        <p>Enhance your home's curb appeal with exterior upgrades.
-                            From expansive landscaping services, to 
-                            beautiful and protective fencing, our services
-                             breathe new life into any home.
-                        </p>
-                    </div>
-                </div>
-
-                <div class = "project-box">
-                    <div class = "project-info">
-                        <h4>BASEMENT CONSTRUCTION <i class = "material-icons">stairs 2</i></h4>
-                        <p>Transform your basement into a functional and stylish living area with 
-                            our expert services. Whether it's a cozy family room, 
-                            a state-of-the-art home theater, or additional guest bedrooms, 
-                            we create versatile spaces that add value and comfort to your home.</p>
-                    </div>
+            <div class="slider-scrollbar">
+                <div class="scrollbar-track">
+                    <div class="scrollbar-thumb"></div>
                 </div>
             </div>
-        </section>
-        
-        <section class = "aboutus" id = "aboutus">
-            <div class = "about-us">
-                <div class = "container">
-                    <div class = "row">
-                        <div class = "flex">
-                            <h2>About Us</h2>
-                            <h3>"Your Dream Home, Our Commitment"</h3>
-                            <p>At Invicto Homes, we specialize in making your dream home 
-                                a reality. Despite being a newly established company, our 
-                                portfolio of completed properties showcases our ability to 
-                                deliver exceptional results. With a focus on innovative 
-                                design and quality construction, we turn your unique vision 
-                                into a stunning and functional living space.
-                            </p>
-                            <div class = "social-icons">
-                                <a href = "https://www.instagram.com/invictohomes?igsh=MXFhenU2eW9rNXFyZg==" target="_blank"><i class = "fab fa-instagram"></i></a>
-                            </div>
+        </div>
+    </section>
 
+    <section class="home2imgtext">
+        <div class="home2imgtext">
+            <h2>WHAT WE OFFER</h2>
+        </div>
+    </section>
+
+    <section class="projects" id="projects">
+        <div class="project-container">
+            <div class="project-box">
+                <div class="project-info">
+                    <h4>CUSTOM RENOVATIONS <i class="material-icons">foundation</i></h4>
+                    <p>Transform your existing space with our custom renovation services. From kitchens to bathrooms, we bring your vision to life with exceptional craftsmanship and attention to detail.</p>
+                </div>
+            </div>
+
+            <div class="project-box">
+                <div class="project-info">
+                    <h4>NEW HOME CONSTRUCTIONS <i class="material-icons">construction</i></h4>
+                    <p>Build your dream home from the ground up with Invicto Homes. Our team of experts ensures every detail is crafted to perfection, creating a home that reflects your style and meets your needs.</p>
+                </div>
+            </div>
+
+            <div class="project-box">
+                <div class="project-info">
+                    <h4>EXTERIOR DESIGN <i class="material-icons">roofing</i></h4>
+                    <p>Enhance your home's curb appeal with exterior upgrades. From expansive landscaping services to beautiful and protective fencing, our services breathe new life into any home.</p>
+                </div>
+            </div>
+
+            <div class="project-box">
+                <div class="project-info">
+                    <h4>BASEMENT CONSTRUCTION <i class="material-icons">stairs</i></h4>
+                    <p>Transform your basement into a functional and stylish living area with our expert services. Whether it's a cozy family room, a state-of-the-art home theater, or additional guest bedrooms, we create versatile spaces that add value and comfort to your home.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="aboutus" id="aboutus">
+        <div class="about-us">
+            <div class="container">
+                <div class="row">
+                    <div class="flex">
+                        <h2>About Us</h2>
+                        <h3>"Your Dream Home, Our Commitment"</h3>
+                        <p>At Invicto Homes, we specialize in making your dream home a reality. Despite being a newly established company, our portfolio of completed properties showcases our ability to deliver exceptional results. With a focus on innovative design and quality construction, we turn your unique vision into a stunning and functional living space.</p>
+                        <div class="social-icons">
+                            <a href="https://www.instagram.com/invictohomes" target="_blank"><i class="fab fa-instagram"></i></a>
                         </div>
-                        <div class="flex">
-                            <img src = "lion.png">
-                        </div>
+                    </div>
+                    <div class="flex">
+                        <img src="lion.png" alt="Invicto Homes">
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-
-        <section class = "contactus" id ="contactus">
-            <form class = "contact-container" action = "https://formspree.io/f/xeoqzjzq" method = "POST">
-                <h1>Contact Us</h1>
-                <div class ="input-name">
-                    <input type="text" class = "first-name" name = "fName" placeholder="First Name" required>
-                    <input type="text" class = "last-name" name = "lName" placeholder="Last Name" required>
-                </div>
-                <div class="input-email">
-                    <input type="email" class = "email" name ="email" placeholder="Your Email" required>
-                </div>
-                <div class="input-subject">
-                    <input type="text" class = "subject" name ="subject" placeholder="Subject">
-                </div>
-                <div class="input-message">
-                    <input type="text" class = "message" name ="message" placeholder="Your Message" required></textarea>
-                </div>
-                <div class ="action-btn">
-                    <button class ="btn btn-submit">Submit</button>
-                </div>
-                <div class="or-text">Or contact us on social media</div>
-                <a href="https://www.instagram.com/invictohomes?igsh=MXFhenU2eW9rNXFyZg==" target="_blank" class="social-contact-link">
+    <section class="contactus" id="contactus">
+        <form class="contact-container" action="https://formspree.io/f/xeoqzjzq" method="POST">
+            <h1>Contact Us</h1>
+            <div class="input-name">
+                <input type="text" class="first-name" name="fName" placeholder="First Name" required>
+                <input type="text" class="last-name" name="lName" placeholder="Last Name" required>
+            </div>
+            <div class="input-email">
+                <input type="email" class="email" name="email" placeholder="Your Email" required>
+            </div>
+            <div class="input-subject">
+                <input type="text" class="subject" name="subject" placeholder="Subject">
+            </div>
+            <div class="input-message">
+                <input type="text" class="message" name="message" placeholder="Your Message" required>
+            </div>
+            <div class="action-btn">
+                <button class="btn btn-submit">Submit</button>
+            </div>
+            <div class="or-text">Or contact us on social media</div>
+            <a href="https://www.instagram.com/invictohomes" target="_blank" class="social-contact-link">
                 <div class="social-contact">
                     <div class="social">
                         <div class="handle">Our Instagram</div>
                         <div class="social-action">
                             <span>Instagram</span>
-                            <span class = "material-icons">arrow_right_alt</span>
+                            <span class="material-icons">arrow_right_alt</span>
                         </div>
                     </div>
                 </div>
             </a>
-            </form>
-        </section>
+        </form>
+    </section>
 
-    </body>
+    <!-- Image Lightbox Modal -->
+<div id="lightbox-modal" class="lightbox-modal">
+    <span id="lightbox-close" class="lightbox-close">&times;</span>
+    <img class="lightbox-content" id="lightbox-img">
+    <div id="lightbox-caption" class="lightbox-caption"></div>
+</div>
+
+<!-- Footer Section -->
+<footer class="site-footer">
+    <div class="footer-content">
+        <p>&copy; 2024 Invicto Homes | 
+            <a href="https://your-personal-portfolio.com" target="_blank">
+                <img src="your-logo.png" alt="Your Portfolio Logo" class="portfolio-logo">
+            </a>
+        </p>
+    </div>
+</footer>
+
+</body>
 </html>
