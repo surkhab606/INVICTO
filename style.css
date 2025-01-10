@@ -11,6 +11,11 @@ html {
 
 body {
     font-family: 'Poppins', 'Arial', sans-serif;
+    overscroll-behavior: contain;
+}
+
+html, body {
+    overflow-x: hidden;
 }
 
 /* Banner Section */
@@ -197,6 +202,11 @@ body {
 .home2imgtext {
     text-align: center;
     margin-bottom: 0;
+}
+
+.home2imgtext h2 {
+    text-align: center;
+    margin: 0 auto;
 }
 
 .home2text h2,
@@ -838,7 +848,7 @@ input {
 
     .home2text h2,
     .home2imgtext h2 {
-        font-size: 32px;
+        font-size: 24px;
     }
 
     .about-us h2 {
