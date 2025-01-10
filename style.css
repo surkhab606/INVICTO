@@ -12,6 +12,8 @@ html {
 body {
     font-family: 'Poppins', 'Arial', sans-serif;
     overscroll-behavior: contain;
+    margin: 0;
+    padding: 0;
 }
 
 html, body {
@@ -26,6 +28,7 @@ html, body {
     background-size: cover;
     background-position: center; 
     padding: 20px;
+    padding-top: env(safe-area-inset-top);
     text-align: center;
     position: relative;
 }
@@ -768,6 +771,11 @@ input {
         margin: 10px 0;
     }
 
+    .home2text p {
+        padding: 0 20px;
+        text-align: justify;
+    }
+
     /* Projects */
     .project-container {
         grid-template-columns: 1fr;
@@ -803,7 +811,7 @@ input {
 
     .input-name {
         flex-direction: column;
-        gap: 10px;
+        gap: 16px;
     }
 
     .input-name input,
