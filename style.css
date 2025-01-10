@@ -730,6 +730,17 @@ input {
         min-height:auto;
     }
 
+    .home2imgtext {
+        max-width: 90%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .home2imgtext h2 {
+        font-size: 1.8rem;
+        margin-bottom: 20px;
+    }
+
     /* Show the menu when checkbox is checked */
     .nav-toggle:checked + .nav-toggle-label + ul {
         transform: scaleY(1);
