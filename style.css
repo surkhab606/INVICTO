@@ -11,13 +11,15 @@ html {
 
 body {
     font-family: 'Poppins', 'Arial', sans-serif;
-    overscroll-behavior: contain;
+    overscroll-behavior: none;
     margin: 0;
     padding: 0;
 }
 
 html, body {
     overflow-x: hidden;
+    margin: 0;
+    padding: 0;
 }
 
 /* Banner Section */
@@ -27,6 +29,7 @@ html, body {
     background-image: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url(background.png);
     background-size: cover;
     background-position: center; 
+    background-attachment: fixed;
     padding: 20px;
     padding-top: env(safe-area-inset-top);
     text-align: center;
@@ -658,6 +661,7 @@ input {
     color: #fff; /* Text color */
     padding: 20px 0;
     text-align: center;
+    padding-bottom: env(safe-area-inset-top);
 }
 
 .site-footer .footer-content {
@@ -773,7 +777,12 @@ input {
 
     .home2text p {
         padding: 0 20px;
-        text-align: justify;
+        text-align: left;
+        word-spacing: normal;
+        letter-spacing: normal;
+        line-height: 1.5;
+        white-space: normal;
+        word-break: break-word;
     }
 
     /* Projects */
@@ -811,7 +820,7 @@ input {
 
     .input-name {
         flex-direction: column;
-        gap: 16px;
+        gap: 20px;
     }
 
     .input-name input,
