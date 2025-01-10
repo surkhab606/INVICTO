@@ -13,17 +13,9 @@ body {
     font-family: 'Poppins', 'Arial', sans-serif;
 }
 
-html, body {
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden;
-    width: 100%;
-}
 /* Banner Section */
 .banner {  
     width: 100%;
-    max-width: 100vw;
-    overflow: hidden;
     min-height: 100vh; 
     background-image: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url(background.png);
     background-size: cover;
@@ -201,18 +193,10 @@ html, body {
 }
 
 /* Section Headings */
-.home2text {
-    text-align: center;
-    margin: 0 auto;
-    padding: 20px 16px;
-}
+.home2text,
 .home2imgtext {
     text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
+    margin-bottom: 0;
 }
 
 .home2text h2,
@@ -222,9 +206,10 @@ html, body {
 }
 
 .home2text p {
-    padding: 0 16px;
-    font-size: 1rem;
-    line-height: 1.6;
+    margin: 20px auto;
+    font-weight: 100;
+    line-height: 25px;
+    margin-bottom: 0;
 }
 
 /* Projects Section */
@@ -235,9 +220,9 @@ html, body {
 
 .project-container {
     display: grid;
-    grid-template-columns: 1fr;
-    justify-items: center;
-    gap: 20px;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    gap: 2.5rem;
 }
 
 .project-box{
@@ -660,8 +645,6 @@ input {
     color: #fff; /* Text color */
     padding: 20px 0;
     text-align: center;
-    width: 100%;
-    overflow: hidden;
 }
 
 .site-footer .footer-content {
@@ -831,20 +814,9 @@ input {
 
     /* Slider */
     .slider-wrapper .image-list {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-        gap: 16px;
-        overflow-x:auto;
+        display: flex;
+        overflow-x: auto;
         scroll-snap-type: x mandatory;
-        padding: 10px;
-    }
-
-    .slider-wrapper .image-item {
-        width: 100%;
-        max-width: 100%;
-        height: auto;
-        object-fit: cover;
-        scroll-snap-align: start;
     }
 
     .slider-wrapper .image-list .image-item {
@@ -868,7 +840,6 @@ input {
     .home2imgtext h2 {
         font-size: 32px;
     }
-
 
     .about-us h2 {
         font-size: 28px;
